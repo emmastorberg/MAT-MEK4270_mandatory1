@@ -223,7 +223,7 @@ def test_exact_wave2d(m):
 
 def create_gif():
     wave = Wave2D_Neumann()
-    data = wave(256, 256, mx=2, my=2, cfl=1/np.sqrt(2), store_data=2)
+    data = wave(256, 256, mx=2, my=2, cfl=1/np.sqrt(2), store_data=8)
 
     fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
     frames = []
